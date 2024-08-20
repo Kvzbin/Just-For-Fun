@@ -1,0 +1,240 @@
+/* Base Styles */
+.about-main {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .about-main h1 {
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+  }
+  
+  .content {
+    padding: 5px 30px;
+  }
+
+  .content-1 {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+  
+  .content-1 img {
+    width: 15rem;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+    margin-top: 5px;
+  }
+
+  img:hover {
+    width: 15.5rem;
+    height: auto;
+    transition: .5s ease-in-out;
+  }
+
+  .content-2 img {
+    width: 15rem;
+    height: auto;
+    float: right;
+    margin-left: 20px;
+  }
+  
+  .content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 10px;
+    text-align: justify;
+  }
+
+
+  
+  @media only screen and (min-width: 320px) and (max-width: 767.9px) {
+    /* CSS rules for devices with a width between 320px and 480px */
+
+    .about-main {
+      display: flex;
+      flex-direction: column;
+      padding: 20px 10px;
+    }
+    
+    .about-main h1 {
+      font-size: 1.4rem;
+      margin-bottom: 5px;
+    }
+    
+    .content {
+      padding: 5px 30px;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .content-1 {
+      width: 100%;
+      padding-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    .content-2 {
+      width: 100%;
+      padding: 10px 0;
+      box-sizing: border-box;
+    }
+    
+    .content-1 img {
+      width: 15rem;
+      margin-top: 23px;
+      margin-right: 20px;
+      padding-bottom: 15px;
+    }
+  
+    .content-2 img {
+      width: 15rem;
+      margin-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    .content-2 p {
+      font-size: .9rem;
+      line-height: 1.6;
+      text-align: justify;
+    }
+    
+    .content-1 p {
+      font-size: .9rem;
+      line-height: 1.6;
+      text-align: justify;
+      padding-top: 10px;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1023.9px) {
+    /* CSS rules for devices with a width between 768px and 992px */
+
+    .about-main {
+      display: flex;
+      flex-direction: column;
+      padding: 20px 10px;
+    }
+    
+    .about-main h1 {
+      font-size: 1.5rem;
+      margin-bottom: 5px;
+    }
+    
+    .content {
+      padding: 5px 30px;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .content-1 {
+      width: 100%;
+      padding-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    .content-2 {
+      width: 100%;
+      padding: 10px 0;
+      box-sizing: border-box;
+    }
+    
+    .content-1 img {
+      width: 15rem;
+      margin-right: 20px;
+      margin-top: 25px;
+      padding-bottom: 15px;
+    }
+  
+    .content-2 img {
+      width: 15rem;
+      margin-top: 15px;
+      margin-left: 20px;
+      padding-bottom: 15px;
+    }
+
+    .content-2 p {
+      font-size: .9rem;
+      line-height: 1.6;
+      text-align: justify;
+    }
+    
+    .content-1 p {
+      font-size: .9rem;
+      line-height: 1.6;
+      text-align: justify;
+      padding-top: 10px;
+    }
+  }
+  
+
+  @media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    /* CSS rules for devices with a width between 992px and 1200px */
+
+    .about-main {
+      display: flex;
+      flex-direction: column;
+      padding: 20px 30px;
+    }
+    
+    .about-main h1 {
+      font-size: 1.6rem;
+    }
+    
+    .content {
+      padding: 0 30px;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .content-1 {
+      width: 100%;
+      padding: 10px 0;
+      box-sizing: border-box;
+    }
+
+    .content-2 {
+      width: 100%;
+      padding: 20px 0;
+      box-sizing: border-box;
+    }
+    
+    .content-1 img {
+      width: 14rem;
+      margin-right: 20px;
+      margin-top: 25px;
+      padding-bottom: 10px;
+    }
+  
+    .content-2 img {
+      width: 14rem;
+      /* box-sizing: border-box; */
+      margin-top: 10px;
+      padding-bottom: 15px;
+    }
+
+    .content-1 img:hover {
+      transform: scale(1.1);
+
+    }
+
+    .content-2 img:hover {
+      transform: scale(1.1);
+
+    }
+
+    .content-2 p {
+      font-size: 1rem;
+      line-height: 1.6;
+      text-align: justify;
+    }
+    
+    .content-1 p {
+      font-size: 1rem;
+      line-height: 1.6;
+      text-align: justify;
+      padding-top: 10px;
+    }
+  }
+  
+  

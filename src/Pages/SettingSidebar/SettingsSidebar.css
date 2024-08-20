@@ -1,0 +1,28 @@
+.setting-main {
+    position: absolute;
+    right: 70px;
+    bottom: 70px;
+    font-size: 2rem;
+}
+
+.rotate {
+    animation: rotation 4s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+/* Styles specific to the sidebar */
+.sidebar h3 {
+  margin-top: 0;
+}
+
+.sidebar button {
+  margin-right: 10px;
+}

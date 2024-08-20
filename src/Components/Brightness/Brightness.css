@@ -1,0 +1,11 @@
+.b-main p {
+    font-size: .8em;
+}
+
+.b-main {
+    display: flex;
+}
+
+.b-main button {
+    font-size: xx-small;
+}

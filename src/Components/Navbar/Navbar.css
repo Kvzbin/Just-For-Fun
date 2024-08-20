@@ -1,0 +1,210 @@
+/* Base styles */
+.nav-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-left img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.nav-left h1 {
+  font-size: 1.1rem;
+}
+
+.nav-right {
+  display: flex;
+  /* align-items: center; */
+}
+
+.nav-right ul {
+  display: flex;
+  list-style: none;
+  transition: max-height 0.3s ease-in-out; /* Smooth transition for dropdown */
+}
+
+.nav-right ul li {
+  margin: 0 10px;
+}
+
+.nav-right ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+}
+
+/* Hamburger menu icon */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out; /* Smooth transition for icon */
+}
+
+/* Media queries for responsive design */
+
+/* Extra Small Devices (Phones) */
+@media only screen and (max-width: 575.98px) {
+.nav-main {
+  padding: 8px 16px;
+}
+
+.nav-left h1 {
+  font-size: .8rem;
+  padding-right: 4px;
+}
+
+.nav-left img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+  .nav-right ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top:  5px;
+    padding-left: 40px;
+    position: absolute;
+    top: 50px; /* Adjust based on the height of your navbar */
+    right: 0;
+    background-color: #fff; /* Background color for dropdown */
+    z-index: 1000;
+    max-height: 0;
+    overflow: hidden; /* Hide the menu when closed */
+  }
+
+  .nav-right ul.active {
+    display: flex;
+    max-height: 300px; /* Adjust based on the content */
+  }
+
+  .nav-right ul li {
+    margin: 10px 0;
+  }
+
+  .hamburger {
+    display: block;
+    margin-left: auto; /* Pushes the hamburger icon to the right */
+  }
+
+  .hamburger svg {
+    transition: transform 0.3s ease-in-out; /* Smooth transition for icon */
+    font-size: 1rem;
+  }
+}
+
+/* Small Devices (Tablets) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .nav-main {
+    padding: 8px 25px;
+  }
+  
+  .nav-left h1 {
+    font-size: .8rem;
+    padding-right: 4px;
+  }
+  
+  .nav-left img {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+
+  .nav-right ul li a {
+    font-size: .78rem;
+  }
+
+}
+
+/* Medium Devices (Small Laptops) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .nav-right ul {
+    flex-direction: row;
+  }
+
+  .nav-main {
+    padding: 10px 25px;
+  }
+
+  .nav-left img {
+    height: 2.3rem;
+    width: 2.3rem;
+  }
+
+  .nav-left h1 {
+    font-size: .87rem;
+  }
+
+  .nav-right {
+    font-size: .7rem;
+  }
+
+  .nav-right ul li a {
+    font-size: .83rem;
+  }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .nav-main {
+    padding: 8px 60px;
+  }
+
+  .nav-left h1 {
+    font-size: 1rem;
+    padding-right: 4px;
+  }
+  
+  .nav-left img {
+    height: 2.6rem;
+    width: 2.6rem;
+  }
+
+  .nav-right ul li a {
+    font-size: .9rem;
+  }
+
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .nav-main {
+    padding: 8px 60px;
+  }
+
+  .nav-left h1 {
+    font-size: 1rem;
+    padding-right: 4px;
+  }
+  
+  .nav-left img {
+    height: 2.6rem;
+    width: 2.6rem;
+  }
+
+  .nav-right ul li a {
+    font-size: .9rem;
+  }
+}
+
+/* Extra Extra Large Devices (Very Large Desktops) */
+@media (min-width: 1400px) {
+  .nav-right ul {
+    flex-direction: row;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}

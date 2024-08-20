@@ -1,0 +1,363 @@
+/* .h-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    padding: 10px 0;
+    
+}
+
+.h-main h1 {
+    padding: 7px 0;
+    font-size: 1.5em;
+}
+
+
+.h-child {
+
+    height: 75%;
+    width: 25%;
+    margin-top: 6px;
+    padding: 10px 0;
+    border-radius: 35px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.h-child p {
+    text-align: center;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+form {
+    text-align: center;
+    padding: 12px 0;
+}
+
+.home-div {
+    display: flex;
+    flex-direction: column;
+    font-size: .9em;
+    font-weight: 500;
+    margin-bottom: 15px;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.home-div input {
+    width: 65%;
+    padding: 5px 6px;
+    outline: 0; 
+    border: transparent;
+    border: #43e97b solid 2px;
+    border-radius: 13px;
+    text-align: center;
+    margin-top: 4px;
+    background: transparent;
+}
+
+.login-btn {
+    padding: 6px 15px;
+    font-size: small;
+    font-weight: 500;
+    border-radius: 15px;
+    background-color: rgb(78, 78, 255);
+    border: #BACD92 solid 2px;
+    color: whitesmoke;
+    margin-bottom: 20px;
+}
+
+.login-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.form-foot {
+    font-size: small;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+}
+
+.form-foot a {
+    text-decoration: none;
+    color: blue;
+}
+
+.hello {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: .1em;
+}
+
+.re {
+    margin-left: 20px;
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+} */
+
+/* Base styles */
+.h-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+
+.h-head {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.h-child {
+  padding: 15px 10px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 25%;
+  /* max-width: 400px; */
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+
+}
+
+#well {
+  font-size: 1.25rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.home-div {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: .9rem;
+  color: #555;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  font-size: .8rem;
+  border: 1.5px solid #ccc;
+  border-radius: 15px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.kilo {
+  display: flex;
+  flex-direction: column;
+}
+
+.hello {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.re {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.re:hover {
+  color: #0056b3;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: .9rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.login-btn:hover {
+  background-color: #0056b3;
+}
+
+.form-foot {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.form-foot p {
+  margin: 0;
+}
+
+.form-foot a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.form-foot a:hover {
+  color: #0056b3;
+}
+
+/* Media queries for responsive design */
+
+@media only screen and (min-width: 320px) and (max-width: 767.9px) {
+  /* CSS rules for devices with a width between 320px and 767px */
+  .h-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+  }
+  
+  
+  .h-head {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+  
+  .h-child {
+    padding: 15px 10px;
+    box-sizing: content-box;
+    border-radius: 20px;
+    border: 1.5px solid whitesmoke;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 70vw;
+    max-width: 250px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  
+  }
+  
+  #well {
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .home-div {
+    margin-bottom: 15px;
+    box-sizing: content-box;
+  }
+
+  .form-foot p {
+    font-size: .79rem;
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023.9px) {
+  /* CSS rules for devices with a width between 768px and 1024px */
+
+  .h-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+  }
+  
+  
+  .h-head {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+  
+  .h-child {
+    padding: 15px 10px;
+    box-sizing: content-box;
+    border-radius: 20px;
+    border: 1.5px solid whitesmoke;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 70vw;
+    max-width: 250px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  
+  }
+  
+  #well {
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .home-div {
+    margin-bottom: 15px;
+    box-sizing: content-box;
+  }
+
+  .form-foot p {
+    font-size: .79rem;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  /* CSS rules for devices with a width between 768px and 992px */
+
+  .h-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 78vh;
+  }
+  
+  
+  .h-head {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+  
+  .h-child {
+    padding: 15px 10px;
+    box-sizing: content-box;
+    border-radius: 20px;
+    border: 1.5px solid whitesmoke;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 70vw;
+    max-width: 250px;
+    margin-bottom: 40px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  
+  }
+  
+  #well {
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .home-div {
+    margin-bottom: 15px;
+    box-sizing: content-box;
+  }
+
+  .form-foot p {
+    font-size: .79rem;
+  }
+}

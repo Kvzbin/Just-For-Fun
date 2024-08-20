@@ -1,0 +1,28 @@
+.topbar {
+    display: flex;
+    justify-content: end;
+    padding: 3px 15px;
+    align-items: center;
+    /* background-color: #7D7463; */
+    background-color: #FBAB7E;
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    /* background-color: #D8EFD3; */
+    /* border-bottom: 1.7px solid #ddd; */
+  }
+  
+  .topbar button {
+    margin: 0 5px;
+    padding: 2px 10px;
+    font-size: xx-small;
+    cursor: pointer;
+    border: none;
+    /* background-color: #55AD9B; */
+    /* color: white; */
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .topbar button:hover {
+    background-color: #059212;
+  }
+  
